@@ -137,7 +137,7 @@ public:
 			hardware->Fright->ConfigNeutralMode(CANTalon::kNeutralMode_Jumper);
 			hardware->Rright->ConfigNeutralMode(CANTalon::kNeutralMode_Jumper);
 		}
-
+//mcheese
 
 
 		hardware->navx->Reset();
