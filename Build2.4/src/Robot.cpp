@@ -112,7 +112,6 @@ public:
 		double driveDistance = SmartDashboard::GetNumber("Autonomous Drive Distance", 5);
 		hardware->wheelEncoder->SetDistancePerPulse(circumference/(180*4.74));     //prepares encoder for autonomous
 		PDStraightDrive(.5,driveDistance,5);
-		//hello
 	}
 
 
@@ -137,13 +136,12 @@ public:
 			hardware->Fright->ConfigNeutralMode(CANTalon::kNeutralMode_Jumper);
 			hardware->Rright->ConfigNeutralMode(CANTalon::kNeutralMode_Jumper);
 		}
-//mcheese
 
 
 		hardware->navx->Reset();
 
 
-		/*
+
 		//shooter
 		if (oi -> getJoystickAux() ->GetRawButton (1)==1)
 		{
@@ -177,7 +175,6 @@ public:
 			hardware->Fright->Set(0);
 			hardware->Rright->Set(0);
 		}
-		*/
 	}
 };
 
